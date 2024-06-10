@@ -2,11 +2,11 @@
 
 #define PackageDir="..\..\Builds\Package" 
 #define MyAppName="LUGE 2024.2 Demonstration"
-#define MajorMinorFix="1.1.1" 
-#define BuildNumber="2" 
+#define MajorMinorFix="24.2.0" 
+#define BuildNumber="0" 
 #define PackageName="luge-2024.2-demonstration_" + MajorMinorFix + "-" + BuildNumber + "_windows_all.nipkg"
 #define MyIcon=""
-#define OutputDir="..\..\Builds\Installer Output\"
+#define OutputDir="..\..\Builds\Online Installer\"
 #define PassiveMode=""
 #define BuildNumberInfos=MajorMinorFix + "." + BuildNumber
 #define MyAppPublisher="BioLogic"
@@ -58,7 +58,7 @@ AlwaysRestart=no
 MinVersion=10.0
 ; PrivilegesRequired admin or lowest. Lowest will not require Admin
 PrivilegesRequired=admin
-DefaultDirName={%TEMP}\BioLogic
+DefaultDirName={%TEMP}\LUGE
 
 
 [Languages]

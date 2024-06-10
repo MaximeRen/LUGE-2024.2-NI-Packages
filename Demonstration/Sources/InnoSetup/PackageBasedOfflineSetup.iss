@@ -1,11 +1,11 @@
 ; Informations générales
 #define PackageDir="..\..\Builds\Package"
 #define MyAppName="LUGE 2024.2 Demonstration"
-#define MajorMinorFix="1.0.0" 
+#define MajorMinorFix="24.2.0" 
 #define BuildNumber="0"  
 #define PackageName="luge-2024.2-demonstration_" + MajorMinorFix + "-" + BuildNumber + "_windows_all.nipkg"
 #define MyIcon=""
-#define OutputDir="..\..\Builds\Installer Output\"
+#define OutputDir="..\..\Builds\Offline Installer\"
 #define PassiveMode=""
 #define Restart=no
 #define TempFeedName=MyAppName + " Offline Installer"
@@ -31,7 +31,6 @@ CreateUninstallRegKey=no
 
 ;Définitiion des informations de l'installeur
 AppName={#MyAppName}
-;UninstallDisplayName={#MyAppName}
 UpdateUninstallLogAppName=yes
 AppVersion={#MajorMinorFix}
 AppVerName={#MyAppName} {#MajorMinorFix}
@@ -57,11 +56,11 @@ DisableProgramGroupPage=yes
 AlwaysShowComponentsList=yes
 AlwaysRestart={#Restart}
 ;Configuration des pré-requis de l'installeur à l'exécution
-;MinVersion 10.0 conrrespond à Windows 10 1507
+;MinVersion 10.0 correspond à Windows 10 1507
 MinVersion=10.0
 ; PrivilegesRequired admin or lowest. Lowest will not require Admin
 PrivilegesRequired=admin
-DefaultDirName={%TEMP}\BioLogic
+DefaultDirName={%TEMP}\LUGE
 
 
 [Languages]

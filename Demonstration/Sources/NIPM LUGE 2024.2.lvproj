@@ -11,6 +11,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="How To.txt" Type="Document" URL="../How To.txt"/>
 		<Item Name="Main VI.vi" Type="VI" URL="../Main VI.vi"/>
 		<Item Name="NIPM_Functions.lvlib" Type="Library" URL="../NIPM_Functions/NIPM_Functions.lvlib"/>
 		<Item Name="PackageBasedOfflineSetup.iss" Type="Document" URL="../InnoSetup/PackageBasedOfflineSetup.iss"/>
@@ -19,6 +20,7 @@
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="BuildErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/fileVersionInfo.llb/BuildErrorSource.vi"/>
+				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="FileVersionInfo.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/fileVersionInfo.llb/FileVersionInfo.vi"/>
@@ -30,6 +32,7 @@
 				<Item Name="GetFileVersionInfoSize.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/fileVersionInfo.llb/GetFileVersionInfoSize.vi"/>
 				<Item Name="MoveMemory.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/fileVersionInfo.llb/MoveMemory.vi"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
+				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="NIPM_API.lvlib" Type="Library" URL="/&lt;vilib&gt;/National Instruments/NIPM API (Beta)/NIPM_API.lvlib"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Busy.vi"/>
@@ -71,7 +74,8 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{3ABCAC9B-2FFD-45A1-935C-B53A7FC2A9D6}</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Bld_version.major" Type="Int">24</Property>
+				<Property Name="Bld_version.minor" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">LUGE_2024.2.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../Builds/Application/LUGE_2024.2.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
@@ -79,7 +83,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../Builds/Application/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{288A6E61-981A-4DE7-B3D7-3A3BB314FAEA}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{16DFBC8B-FEA4-4D9C-879C-7405FD12479B}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main VI.vi</Property>
@@ -107,7 +111,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/LUGE_2024.2_Package/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">luge-2024.2-demonstration_1.1.1-2_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">luge-2024.2-demonstration_1.1.1-4_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_packageVersion" Type="Bool">false</Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
@@ -116,9 +120,9 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">3</Property>
+				<Property Name="PKG_buildNumber" Type="Int">0</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">LUGE_2024.2_Package</Property>
-				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
+				<Property Name="PKG_dependencies.Count" Type="Int">1</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[0].MaxVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].MaxVersionInclusive" Type="Bool">false</Property>
@@ -152,7 +156,7 @@
 				<Property Name="PKG_packageName" Type="Str">luge-2024.2-demonstration</Property>
 				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
 				<Property Name="PKG_section" Type="Str">Application Software</Property>
-				<Property Name="PKG_shortcuts.Count" Type="Int">2</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">1</Property>
 				<Property Name="PKG_shortcuts[0].Destination" Type="Str">root_8</Property>
 				<Property Name="PKG_shortcuts[0].Name" Type="Str">LUGE_2024.2</Property>
 				<Property Name="PKG_shortcuts[0].Path" Type="Path">NIPM LUGE 2024.2</Property>
@@ -172,7 +176,7 @@
 				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/LUGE_2024.2_Application</Property>
 				<Property Name="PKG_sources[0].Type" Type="Str">EXE Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">LUGE 2024.2 Application synopsis</Property>
-				<Property Name="PKG_version" Type="Str">1.1.1</Property>
+				<Property Name="PKG_version" Type="Str">24.2.0</Property>
 			</Item>
 		</Item>
 	</Item>

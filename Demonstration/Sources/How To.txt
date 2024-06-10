@@ -1,0 +1,15 @@
+Create Online installer :
+* Build Exe from Project
+* Build Package from project
+* Open the Script PackageBasedSetup.iss and update variables MajorMinorFix="x.x.x" and BuildNumber="x"  with the values of the package
+* Update the location of the variable FeedURL="" to select a valid Feed Location
+* Build InnoSetup Script to generate Installer
+* Deploy app with your installer
+
+Create offline Installer
+* Build and install a package on your developement system
+package must be installed on your computer to be able to list dependants packages 
+* From the project, open and run "Build Feed for Offline Installer.vi". This will search for required packages end download it in a folder and create a specific Feed for the installer
+* Adapt PackageBasedOfflineSetup.iss if needed
+* Build InnoSetup Script to generate Installer
+* Run the generated Installer with Feed and Pool folder in the same folder
